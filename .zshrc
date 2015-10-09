@@ -8,6 +8,7 @@ export LANG=ja_JP.UTF-8
 export EDITOR=/usr/bin/vi
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
+export PATH=$HOME/bin:$PATH
 
 source ~/.antigen/antigen.zsh
 
