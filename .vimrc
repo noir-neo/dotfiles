@@ -20,6 +20,12 @@ set tabstop=2
 set shiftwidth=2
 set helplang=en
 
+inoremap { {}<Left>
+inoremap [ []<Left>
+inoremap ( ()<Left>
+inoremap " ""<Left>
+inoremap ' ''<Left>
+
 " Note: Skip initialization for vim-tiny or vim-small.
  if 0 | endif
 
