@@ -20,6 +20,11 @@ set tabstop=2
 set shiftwidth=2
 set helplang=en
 
+noremap n l
+noremap c k
+noremap t j
+noremap j h
+
 " Note: Skip initialization for vim-tiny or vim-small.
  if 0 | endif
 
