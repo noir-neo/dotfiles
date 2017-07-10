@@ -14,6 +14,7 @@ export TERM=xterm-256color
 source ~/.antigen/antigen.zsh
 
 antigen bundle sorin-ionescu/prezto 
+antigen bundle marzocchi/zsh-notify
 
 # 色を使用出来るようにする
 autoload -Uz colors
