@@ -31,6 +31,14 @@ bindkey -e
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
+
+on peco-history-selection() {
+BUFFER=`history -n 1 | tail -r | awk '!a[$0]++' | peco`
+CURSOR=$#BUFFER
+zle reset-prompt
+}
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection
  
 # プロンプト
 # 1行表示
