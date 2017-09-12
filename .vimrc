@@ -25,6 +25,8 @@ noremap c k
 noremap t j
 noremap j h
 
+set laststatus=2
+let g:airline_theme = 'molokai'
 
 if &compatible
   set nocompatible
