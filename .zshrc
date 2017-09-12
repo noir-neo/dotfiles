@@ -9,6 +9,7 @@ export EDITOR=/usr/bin/vi
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 export PATH=$HOME/bin:$PATH
+export PATH=/usr/local/bin/git:$PATH
 export TERM=xterm-256color
 
 source /usr/local/share/antigen/antigen.zsh
