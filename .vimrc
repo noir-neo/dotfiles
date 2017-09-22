@@ -19,11 +19,14 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set helplang=en
+set backspace=indent,eol,start
 
 noremap n l
 noremap c k
 noremap t j
 noremap j h
+
+imap <c-h> <esc>
 
 set laststatus=2
 let g:airline_theme = 'molokai'

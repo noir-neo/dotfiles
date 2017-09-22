@@ -1,6 +1,17 @@
 set main-view = id date author commit-title:graph=yes,refs=yes
+set blame-view  = date:default author:email-user id:yes,color line-number:yes,interval=1 text
+set pager-view  = line-number:yes,interval=1 text
+set stage-view  = line-number:yes,interval=1 text
+set log-view    = line-number:yes,interval=1 text
+set blob-view   = line-number:yes,interval=1 text
+set diff-view   = line-number:yes,interval=1 text:yes,commit-title-overflow=no
+
+set diff-options = --text -m --first-parent
 
 bind generic c move-up
 bind generic t move-down
 bind generic <Ctrl-E> move-page-down
+
+bind main j !@bash -c "echo -n %(commit) | pbcopy"
+bind generic <Ctrl-J>` @bash -c "echo -n '%(commit)' | pbcopy"
 

@@ -150,6 +150,8 @@ alias mkdir='mkdir -p'
  
 # sudo の後のコマンドでエイリアスを有効にする
 alias sudo='sudo '
+
+alias vi='vim '
  
 # グローバルエイリアス
 alias -g L='| less'
