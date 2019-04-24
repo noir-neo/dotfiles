@@ -1,0 +1,20 @@
+[user]
+	name = Shoma SATO
+	email = noir.neo.04@gmail.com
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = /Users/neo/.gitignore_global
+	autocrlf = input
+[alias]
+	st = status
+	fp = !git fetch -p && git-delete-merged-branches
+	pp = !git pull -p && git-delete-merged-branches
+	pushf = push --force-with-lease
+[rebase]
+	autosquash = true
+	autostash = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

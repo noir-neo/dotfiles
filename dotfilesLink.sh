@@ -6,5 +6,6 @@ ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.tigrc ~/.tigrc
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 ln -sf ~/dotfiles/.zpreztorc ~/.zpreztorc
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 
 
