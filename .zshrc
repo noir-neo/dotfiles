@@ -10,9 +10,12 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/google-cloud-sdk/bin:$PATH
-export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/usr/local/bin/git:$PATH
 export TERM=xterm-256color
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 source /usr/local/share/antigen/antigen.zsh
 
