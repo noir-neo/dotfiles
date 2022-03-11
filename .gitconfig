@@ -2,7 +2,7 @@
 	name = Shoma SATO
 	email = noir.neo.04@gmail.com
 [core]
-	editor = vim -c \"set fenc=utf-8\"
+	editor = nvim
 	excludesfile = /Users/neo/.gitignore_global
 	autocrlf = input
 [alias]

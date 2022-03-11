@@ -5,19 +5,20 @@
 ########################################
 # 環境変数
 export LANG=ja_JP.UTF-8
-export EDITOR=/usr/bin/vi
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh)"
+export EDITOR=nvim
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init - zsh)"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/google-cloud-sdk/bin:$PATH
-export PATH=/usr/local/bin/git:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 export TERM=xterm-256color
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source /usr/local/share/antigen/antigen.zsh
+#source /usr/local/share/antigen/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 
 antigen bundle sorin-ionescu/prezto 
 antigen bundle marzocchi/zsh-notify
