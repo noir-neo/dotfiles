@@ -7,9 +7,11 @@
 	autocrlf = input
 [alias]
 	st = status
-	fp = !git fetch -p && git-delete-merged-branches
-	pp = !git pull -p && git-delete-merged-branches
+	delete-merged-branches = !git branch --merged | egrep -v '\\*|\\+|main|master' | xargs git branch -d
+	fp = !git fetch -p && git delete-merged-branches
+	pp = !git pull -p && git delete-merged-branches
 	pushf = push --force-with-lease
+
 [rebase]
 	autosquash = true
 	autostash = true
